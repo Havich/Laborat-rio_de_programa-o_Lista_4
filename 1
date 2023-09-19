@@ -1,0 +1,22 @@
+//Leia 3 valores inteiros (X, Y, Z), determina e escreve o menor deles
+
+//Função principal
+int main()
+{
+//Declaração de variáveis
+int x, y, z, menor;
+
+//Entrada de dados
+printf("Digite os valores de X, Y e Z\n");
+scanf("%d%d%d", &x, &y, &z);
+
+//Cálculo
+menor = x < y && x < z? x : y < z? y : z;
+    
+//Saída de dados
+printf("O menor valor e %d\n", menor);
+
+//Fim da função principal
+return 0;
+}
+    
