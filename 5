@@ -1,0 +1,54 @@
+/* Um vendedor necessita de um programa que calcule preço total devido por um cliente. O programa
+deve receber o código de um produto a quantidade comprada e calcular o preço total, usando a
+tabela. Mostrar uma mensagem no caso de cóldigo inválido.*/
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+#include <stdlib.h>
+//Função principal
+int main()
+{
+//Declaração de variáveis
+int qtd, cod;
+float total;
+
+//Entrada de dados
+printf("Digite o codigo do produto desejado\n");
+scanf("%d", &cod);
+
+//Cálculo
+switch(cod)
+    {
+    case 1001: 
+    printf("Digite a quantidade do produto %d\n", cod);
+    scanf("%d", &qtd);
+    total = 5.32 * qtd;
+    break;
+    case 1324: 
+        printf("Digite a quantidade do produto %d\n", cod);
+        scanf("%d", &qtd);
+    total = 6.45 * qtd;
+    break;
+    case 6548: 
+        printf("Digite a quantidade do produto %d\n", cod);
+        scanf("%d", &qtd);
+    total = 2.37 * qtd;
+    break;
+    case 987: 
+        printf("Digite a quantidade do produto %d\n", cod);
+        scanf("%d", &qtd);
+    total = 5.32 * qtd;
+    break;
+    case 7623: 
+        printf("Digite a quantidade do produto %d\n", cod);
+        scanf("%d", &qtd);
+    total = 6.45 * qtd;
+    break;
+    default:
+    printf("Codigo invalido\n");
+    exit(0);
+    }
+printf("O valor a ser pago e %.2f", total);    
+//Fim da função principal              
+return 0;
+}
