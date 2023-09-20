@@ -1,0 +1,31 @@
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+//Declaração de variáveis
+int A, B, C;
+
+//Entrada de dados
+printf("Digite o lado A\n");
+scanf("%d", &A);
+printf("Digite o lado B\n");
+scanf("%d", &B);
+printf("Digite o lado C\n");
+scanf("%d", &C);
+
+//Cálculo
+if(A + B > C && B + C > A && C + A > B)
+
+    //Saída de dados
+	if(C == A && C == B)
+		printf("Triangulo Equilatero\n");
+	else if(C == A || C == B)	
+	        printf("Triangulo Isóscelis\n");
+        else
+          	printf("Triangulo Escaleno\n");
+              
+//Fim da função principal              
+return 0;
+}
