@@ -1,0 +1,33 @@
+/* A Secretaria de Meio Ambiente, que controla o indice de poluição, mantém 3 grupos de indústrias
+que são altamente poluentes do meio ambiente: o indice de poluição aceitável varia de 0,05 até 0,29
+Se o indice sobe para 0,3 as indústrias do 1o grupo são intimadas a suspenderem suas atividades, se o
+índice crescer para 0,4 as industrias do 1 e 2 grupo são intimadas a suspenderem suas atividades, se atingir 0,5
+todos os grupos devem ser notificados a paralisarem suas atividades. Faça um programa que leia o índice de poluição*/
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+//Declaração de variáveis
+float ind;
+
+//Entrada de dados
+printf("Digite o indice de poluicao\n");
+scanf("%f", &ind);
+
+//Cálculo
+if(ind < 0.3)
+    //Saída de dados
+    printf("Indice de %.2f aceitavel\n", ind);
+    else if(ind < 0.4)
+        printf("Indice de %.2f As empresas do 1° grupo devem encerrar suas atividades\n", ind);
+        else if(ind < 0.5)
+            printf("Indice de %.2f As empresas do 1° e do 2° grupo devem encerrar suas atividades\n", ind);
+            else if(ind >= 0.5)
+                printf("Indice %.2f muito alto todas as empresas devem encerrar suas atividades\n", ind);
+        
+//Fim da função principal              
+return 0;
+}
