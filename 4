@@ -1,0 +1,31 @@
+/* Um banco concederá um crédito especial aos seus clientes, variável com o saldo médio no último
+ano. Faça um algoritmo que leia o saldo médio de um cliente e calcule o valor do crédito de acordo
+com a tabela. Mostre uma mensagem informando o saldo médio e o valor do crédito.*/
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+//Declaração de variáveis
+float saldo;
+
+//Entrada de dados
+printf("Digite o saldo médio do último ano\n");
+scanf("%f", &saldo);
+
+//Cálculo
+if(saldo <= 200)
+    //Saída de dados
+    printf("Saldo medio = %.2f Credito = 0\n", saldo);
+    else if(saldo <= 400)
+        printf("Saldo medio = %.2f Credito = %.2f\n", saldo, saldo * 0.2);
+        else if(saldo <= 600)
+            printf("Saldo medio = %.2f Credito = %.2f\n", saldo, saldo * 0.3);
+            else if(saldo >= 600)
+                printf("Saldo medio = %.2f Credito = %.2f\n", saldo, saldo * 0.4);
+           
+//Fim da função principal              
+return 0;
+}
